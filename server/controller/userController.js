@@ -2,9 +2,7 @@
 const { json } = require('express');
 const { User, FacebookUser } = require('../model/userModel');
 
-module.exports.facebook = async () =>{
-     
-}
+
 module.exports.register = async (req , res) => {
    try { 
     const {username ,email , password} = req.body ;
