@@ -2,7 +2,7 @@
 
 const router = require("express").Router() ;
 const passport = require('passport') ;
-const {register , login  , facebook } = require('../controller/userController.js') ;
+const {register , login  } = require('../controller/userController.js') ;
 // const CLIENT_URL = "http://localhost:3000/delete" ;
 
 // router.get('/login/failed' , (req , res) => {
@@ -35,5 +35,8 @@ const {register , login  , facebook } = require('../controller/userController.js
 
 router.post("/register" ,register ) ;
 router.post("/login" , login) ;
+router.get("/hii" , (req , res) => {
+    return res.json({msg : "Welcome to the server" }) ;
+})
 
 module.exports = router ;

@@ -44,6 +44,6 @@ const userSchema2 = new mongoose.Schema({
 
 
 const User = mongoose.model("User", userSchema1);
-const FacebookUser = mongoose.model('FacebookUser', userSchema2);
+// const FacebookUser = mongoose.model('FacebookUser', userSchema2);
 
-module.exports = { User, FacebookUser };
+module.exports = { User };

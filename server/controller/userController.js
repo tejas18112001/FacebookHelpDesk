@@ -1,6 +1,6 @@
 
 const { json } = require('express');
-const { User, FacebookUser } = require('../model/userModel');
+const { User } = require('../model/userModel');
 
 
 module.exports.register = async (req , res) => {
